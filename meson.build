@@ -122,6 +122,10 @@ elif host_machine.system() == 'lemon'
 	rtdl_include_dirs += include_directories('sysdeps/lemon/include')
 	libc_include_dirs += include_directories('sysdeps/lemon/include')
 	subdir('sysdeps/lemon')
+elif host_machine.system() == 'caitra'
+	rtdl_include_dirs += include_directories('sysdeps/caitra/include')
+	libc_include_dirs += include_directories('sysdeps/caitra/include')
+	subdir('sysdeps/lemon')
 elif host_machine.system() == 'dripos'
 	disable_linux_option = true
 	rtdl_include_dirs += include_directories('sysdeps/dripos/include')
